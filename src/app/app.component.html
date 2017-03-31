@@ -1,3 +1,6 @@
 <h1>
   {{title}}
 </h1>
+
+<button (click)="login()" *ngIf="!isLoggedIn()">Log-In</button>
+<button (click)="logout()" *ngIf="isLoggedIn()">Log-Off</button>
